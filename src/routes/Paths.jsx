@@ -5,7 +5,6 @@ import { useContext, useState } from "react";
 import { Context } from "../contexts/AuthContext";
 
 
-
 const Paths = () => {
 
     const  {logado} = useContext(Context)

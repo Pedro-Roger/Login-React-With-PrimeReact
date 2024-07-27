@@ -5,6 +5,7 @@ import { Button } from 'primereact/button';
 import { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import { Context } from '../contexts/AuthContext';
 
 
 const Login = () => {
@@ -18,7 +19,7 @@ const Login = () => {
     const navigate= useNavigate();
 
     function logar(dados){
-        if(dados.email == 'pedronisashi@gmail.om' && dados.senha == '123'){
+        if(dados.email == 'pedronisashi@gmail.com' && dados.senha == '123456'){
             setLogado(true);
             navigate('/home');
         }
